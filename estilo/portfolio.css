@@ -1,0 +1,160 @@
+/* estilo/portfolio.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #444;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+section#projetos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.projeto {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.projeto p {
+    margin: 10px 0;
+}
+
+.projeto p strong {
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+
+/* Mobile e Tablets (Menos de 600px) */
+@media (max-width: 599px) {
+    .menu {
+        display: block; 
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #444;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Tablets e Laptops (600px a 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .menu {
+        display: block; 
+        position: static;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        margin: 0;
+    }
+}
+
+/* Desktops (Mais de 1024px) */
+@media (min-width: 1024px) {
+    .menu {
+        display: block; 
+        position: static;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        margin: 0;
+    }
+}

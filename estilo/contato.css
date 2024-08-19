@@ -1,0 +1,173 @@
+/* estilo/contato.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav.menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #444;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.menu ul li {
+    margin: 10px 0;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+section#contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsividade */
+
+/* Mobile e Tablets (Menos de 600px) */
+@media (max-width: 599px) {
+    nav.menu {
+        display: block; 
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #444;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.menu ul {
+        display: block;
+    }
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Tablets e Laptops (600px a 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    nav.menu {
+        display: block; 
+        position: static;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    nav.menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav.menu ul li {
+        margin: 0;
+    }
+}
+
+/* Desktops (Mais de 1024px) */
+@media (min-width: 1024px) {
+    nav.menu {
+        display: block; 
+        position: static;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    nav.menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav.menu ul li {
+        margin: 0;
+    }
+}
